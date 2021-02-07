@@ -103,7 +103,7 @@ public class FilesTest {
         System.out.println("Files.move()");
         var src = root.resolve(Path.of("../number.php")).normalize();
         try(var in = Files.newBufferedReader(src)) {
-            String line = null;
+            String line;
             if((line = in.readLine()) != null) {
                 System.out.println(line);
             }
